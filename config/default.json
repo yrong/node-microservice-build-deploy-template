@@ -1,0 +1,36 @@
+{
+  "port": 4000,
+  "name": "crawler",
+  "logger":{
+      "appenders": [
+        {
+          "type": "console"
+        },
+        {
+          "type": "file",
+          "filename": "crawler.log",
+          "maxLogSize": 20480,
+          "numBackups": 5,
+          "category": "crawler"
+        }
+      ],
+      "replaceConsole": true,
+      "defaultLevel":"INFO"
+    },
+
+    "elasticsearch":{
+        "host": "localhost",
+        "port": 9200
+    },
+
+	"redis": {
+		"host": "localhost",
+		"port": 6379
+	},
+
+   "crawlers":{
+      "jrgz":{"url":"http://localhost:4000/main.html"}
+   }
+
+
+}

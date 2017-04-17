@@ -1,0 +1,311 @@
+﻿/*默认样式*/
+.w_newslist_box{ overflow:hidden;}/*整体宽度、webpart之间间距*/
+.w_newslist_head{font-size:14px; font-weight:bold; color:#717171;}/*标题背景控制*/
+.w_newslist_head span.title{font-family:宋体, Arial, Helvetica, sans-serif;font-weight:bold;font-size:16px;}/*标题文字样式控制*/
+.w_newslist_head span.more a{float:right; color:#666; font-weight:normal;text-decoration:none;height:auto;padding-right:10px}/*更多文字控制*/
+.w_newslist_head span.more a:link{color:#666;text-decoration:none;}/*未访问链接样式*/
+.w_newslist_head span.more a:visited{color:#666;text-decoration:none;}/*已访问链接样式*/
+.w_newslist_head span.more a:hover{color:#666;text-decoration:none;}/*鼠标滑过时链接样式*/
+.w_newslist_head span.more a:active{color:#666;text-decoration:none;}/*选中的链接样式*/
+.w_newslist_body{}/*列表背景控制*/
+.w_newslist_list{width:auto;margin-top:0px;overflow:hidden;padding:0px 15px; list-style-type: none;}/*列表内间距、高度等*/
+.w_newslist_list li{background:url(../images/xwzxr_22.jpg) no-repeat;background-position: 0 50%;line-height:26px;height:auto;float:left;width:100%;}/*标题图标、行高控制*/
+.w_newslist_list li .title{float:left;  padding-left: 15px;}/*列表内新闻标题样式控制*/
+.w_newslist_list li .newsicon{background:url(../images/newsicon.gif) no-repeat 10px 50%;width:38px;height:26px;float:left;}/*New图标*/
+.w_newslist_list li .date{line-height:26px;display:inline;float:right;color:#666;font-size:12px;}  /*日期*/
+.w_newslist_list li a:link{color:#666;text-decoration:none}/*新闻链接样式*/
+.w_newslist_list li a:visited{color:#666;text-decoration:none}/*新闻链接已访问样式*/
+.w_newslist_list li a:hover{color:#000099;text-decoration:none}/*新闻链接鼠标滑过时样式*/
+.w_newslist_list li a:active{color:#666;text-decoration:none}/*新闻链接激活时样式*/
+.w_newslist_foot{}/*列表下方内容控制*/
+
+/*企业要闻*/
+.w_newslist_box_qyyw{border:1px #ececec solid; padding:0 5px; overflow:hidden;height:311px;}/*整体宽度、webpart之间间距*/
+.w_newslist_head_qyyw{border-bottom:1px #d7d7d7 solid; height:34px; font-size:14px; font-weight:bold; line-height:34px; padding-left:10px; color:#717171;}/*标题背景控制*/
+.w_newslist_head_qyyw span.title{font-family:宋体, Arial, Helvetica, sans-serif;font-weight:bold;font-size:16px;}/*标题文字样式控制*/
+.w_newslist_head_qyyw span.more a{float:right; color:#666; font-weight:normal;text-decoration:none;background:url('../images/qydt_09.jpg') no-repeat;width:25px;height:24px;margin-top:4px;padding-right:3px}/*更多文字控制*/
+.w_newslist_head_qyyw span.more a:link{color:#666;text-decoration:none;}/*未访问链接样式*/
+.w_newslist_head_qyyw span.more a:visited{color:#666;text-decoration:none;}/*已访问链接样式*/
+.w_newslist_head_qyyw span.more a:hover{color:#666;text-decoration:none;}/*鼠标滑过时链接样式*/
+.w_newslist_head_qyyw span.more a:active{color:#666;text-decoration:none;}/*选中的链接样式*/
+.w_newslist_body_qyyw{}/*列表背景控制*/
+.w_newslist_list_qyyw{width:auto;margin-top:0px;overflow:hidden;padding:3px 15px; list-style-type: none;}/*列表内间距、高度等*/
+.w_newslist_list_qyyw li{background:url(../images/xwzxr_22.jpg) no-repeat;background-position: 0 50%;line-height:26px;height:auto;float:left;width:100%;}/*标题图标、行高控制*/
+.w_newslist_list_qyyw li .title{ padding-left: 15px;float:left; }/*列表内新闻标题样式控制*/
+.w_newslist_list_qyyw li .newsicon{background:url(../images/newsicon.gif) no-repeat 10px 50%;width:38px;height:26px;float:left;}/*New图标*/
+.w_newslist_list_qyyw li .date{line-height:26px;display:inline;float:right;color:#666;font-size:12px;}  /*日期*/
+.w_newslist_list_qyyw li a:link{color:#666;text-decoration:none}/*新闻链接样式*/
+.w_newslist_list_qyyw li a:visited{color:#666;text-decoration:none}/*新闻链接已访问样式*/
+.w_newslist_list_qyyw li a:hover{color:#000099;text-decoration:none}/*新闻链接鼠标滑过时样式*/
+.w_newslist_list_qyyw li a:active{color:#666;text-decoration:none}/*新闻链接激活时样式*/
+.w_newslist_foot_qyyw{}/*列表下方内容控制*/
+
+/*部委动态*/
+.w_newslist_box_bwdt{margin-top:0px;border:1px #e0e0e0 solid; width:auto;overflow:hidden;height:192px;}/*整体宽度、webpart之间间距*/
+.w_newslist_head_bwdt{background:url(../images/ss.jpg) repeat-x; padding-left:15px; padding-right:10px; height:33px;}/*标题背景控制*/
+.w_newslist_head_bwdt span.title{font-size:14px; color:#466c9d; font-weight:bold; line-height:33px; float:left;padding-left:0px;}/*标题文字样式控制*/
+.w_newslist_head_bwdt span.more a{font-size:12px; line-height:33px; float:right; color:#666666;padding-right:0px;}/*更多文字控制*/
+.w_newslist_head_bwdt span.more a:link{color:#666;text-decoration:none;}/*未访问链接样式*/
+.w_newslist_head_bwdt span.more a:visited{color:#666;text-decoration:none;}/*已访问链接样式*/
+.w_newslist_head_bwdt span.more a:hover{color:#666;text-decoration:none;}/*鼠标滑过时链接样式*/
+.w_newslist_head_bwdt span.more a:active{color:#666;text-decoration:none;}/*选中的链接样式*/
+.w_newslist_body_bwdt{padding:10px 0px;}/*列表背景控制*/
+.w_newslist_list_bwdt{width:auto;margin-top:0px;overflow:hidden;padding:0px 15px; list-style-type: none;}/*列表内间距、高度等*/
+.w_newslist_list_bwdt li{background:url(../images/xwzxr_22.jpg) no-repeat;background-position: 0 50%;line-height:26px;height:auto;float:left;width:100%;}/*标题图标、行高控制*/
+.w_newslist_list_bwdt li .title{float:left;  padding-left: 15px;}/*列表内新闻标题样式控制*/
+.w_newslist_list_bwdt li .newsicon{background:url(../images/newsicon.gif) no-repeat 10px 50%;width:38px;height:26px;float:left;}/*New图标*/
+.w_newslist_list_bwdt li .date{line-height:26px;display:inline;float:right;color:#666;font-size:12px;}  /*日期*/
+.w_newslist_list_bwdt li a:link{color:#666;text-decoration:none}/*新闻链接样式*/
+.w_newslist_list_bwdt li a:visited{color:#666;text-decoration:none}/*新闻链接已访问样式*/
+.w_newslist_list_bwdt li a:hover{color:#000099;text-decoration:none}/*新闻链接鼠标滑过时样式*/
+.w_newslist_list_bwdt li a:active{color:#666;text-decoration:none}/*新闻链接激活时样式*/
+.w_newslist_foot_bwdt{}/*列表下方内容控制*/
+
+/*领导讲话*/
+.w_newslist_box_ld{padding-top:10px;width:349px;}/*整体宽度、webpart之间间距*/
+.w_newslist_head_ld{background:url(../images/qydt_46.jpg) no-repeat;height:31px;}/*标题背景控制*/
+.w_newslist_head_ld span.title{font-family:宋体, Arial, Helvetica, sans-serif;font-weight:bold;font-size:16px;}/*标题文字样式控制*/
+.w_newslist_head_ld span.more a{float:right; color:#666; font-weight:normal;text-decoration:none;margin-top:10px;margin-right:10px;}/*更多文字控制*/
+.w_newslist_head_ld span.more a:link{color:#666;text-decoration:none;}/*未访问链接样式*/
+.w_newslist_head_ld span.more a:visited{color:#666;text-decoration:none;}/*已访问链接样式*/
+.w_newslist_head_ld span.more a:hover{color:#666;text-decoration:none;}/*鼠标滑过时链接样式*/
+.w_newslist_head_ld span.more a:active{color:#666;text-decoration:none;}/*选中的链接样式*/
+.w_newslist_body_ld{background:url(../images/qydt_50.jpg) no-repeat;}/*列表背景控制*/
+.w_newslist_list_ld{height:158px;width:auto;margin-top:0px;overflow:hidden;padding:0px 15px; list-style-type: none;}/*列表内间距、高度等*/
+.w_newslist_list_ld li{background:url(../images/xb6_74.gif) no-repeat;background-position: 0 50%;line-height:26px;height:auto;float:left;width:100%;}/*标题图标、行高控制*/
+.w_newslist_list_ld li .title{ padding-left: 15px;float:left; }/*列表内新闻标题样式控制*/
+.w_newslist_list_ld li .newsicon{background:url(../images/newsicon.gif) no-repeat 10px 50%;width:38px;height:26px;float:left;}/*New图标*/
+.w_newslist_list_ld li .date{line-height:26px;display:inline;float:right;color:#666;font-size:12px;}  /*日期*/
+.w_newslist_list_ld li a:link{color:#666;text-decoration:none}/*新闻链接样式*/
+.w_newslist_list_ld li a:visited{color:#666;text-decoration:none}/*新闻链接已访问样式*/
+.w_newslist_list_ld li a:hover{color:#000099;text-decoration:none}/*新闻链接鼠标滑过时样式*/
+.w_newslist_list_ld li a:active{color:#000099;text-decoration:none}/*新闻链接激活时样式*/
+.w_newslist_foot_ld{}/*列表下方内容控制*/
+/*领导讲话*/
+
+/*CNPC首页*/
+.w_newslist_box_sy {border:#fec84d 1px solid;}/*整体宽度、webpart之间间距*/
+.w_newslist_head_sy {background: url(../images/mod_21a_new.jpg) repeat-x; height: 36px;width:100%}/*标题背景控制*/
+.w_newslist_head_sy span.title {line-height: 36px; padding-left: 15px; font-family: 宋体, Arial, Helvetica, sans-serif; color: #535454; font-size: 14px; font-weight: bold}/*标题文字样式控制*/
+.w_newslist_head_sy span.more A {padding-right: 15px; float: right; color: #666; font-weight: normal; text-decoration: none; padding-top: 13px}/*更多文字控制*/
+.w_newslist_head_sy span.more a:link{color:#666;text-decoration:none;}/*未访问链接样式*/
+.w_newslist_head_sy span.more a:visited{color:#666;text-decoration:none;}/*已访问链接样式*/
+.w_newslist_head_sy span.more a:hover{color:#666;text-decoration:none;}/*鼠标滑过时链接样式*/
+.w_newslist_head_sy span.more a:active{color:#666;text-decoration:none;}/*选中的链接样式*/
+.w_newslist_body_sy {background: url(../images/qydt_501.jpg) no-repeat}/*列表背景控制*/
+.w_newslist_list_sy {list-style-type: none; margin-top: 0px; padding:0px 15px; height: auto; overflow: hidden}/*列表内间距、高度等*/
+.w_newslist_list_sy li {line-height: 26px; background: url(../images/xwzxr_22.jpg) no-repeat;background-position: 0 50%; height: auto;float:left;width:100%;}/*标题图标、行高控制*/
+.w_newslist_list_sy li .title {padding-left: 15px}/*列表内新闻标题样式控制*/
+.w_newslist_list_ld li .newsicon{background:url(../images/newsicon.gif) no-repeat 10px 50%;width:38px;height:26px;float:left;}/*New图标*/
+.w_newslist_list_sy li A:link {color: #383838; text-decoration: none}/*新闻链接样式*/
+.w_newslist_list_sy li A:visited {color: #383838; text-decoration: none}/*新闻链接已访问样式*/
+.w_newslist_list_sy li A:hover {color: red; text-decoration: none}/*新闻链接鼠标滑过时样式*/
+.w_newslist_list_sy li A:active {color: #383838; text-decoration: none}/*新闻链接激活时样式*/
+.w_newslist_list_sy li .date {line-height: 26px; display: inline; float: right; color: #666; font-size: 12px}/*日期*/
+.w_newslist_foot_sy {}/*列表下方内容控制*/
+/*CNPC首页*/
+/*新闻列表分页默认样式*/
+.w_newslistpage_box{overflow:hidden;}/*整体宽度、webpart之间间距*/
+.w_newslistpage_inner{font-size:14px;}/*特殊效果等*/
+.w_newslistpage_head{font-size:14px; font-weight:bold; color:#717171;}/*标题背景控制*/
+.w_newslistpage_head span.title{font-family:宋体, Arial, Helvetica, sans-serif;font-weight:bold;font-size:16px;}/*标题文字样式控制*/
+.w_newslistpage_head span.more a{float:right; color:#666; font-weight:normal;text-decoration:none;height:0px;}/*更多文字控制*/
+.w_newslistpage_head span.more a:link{color:#666;text-decoration:none;}/*未访问链接样式*/
+.w_newslistpage_head span.more a:visited{color:#666;text-decoration:none;}/*已访问链接样式*/
+.w_newslistpage_head span.more a:hover{color:#666;text-decoration:none;}/*鼠标滑过时链接样式*/
+.w_newslistpage_head span.more a:active{color:#666;text-decoration:none;}/*选中的链接样式*/
+.w_newslistpage_body{}/*列表背景控制*/
+.w_newslistpage_list{width:auto;margin-top:0px;overflow:hidden;padding:0px 15px; list-style-type: none;}/*列表内间距、高度等*/
+.w_newslistpage_list li{background:url(../images/xbj.gif) no-repeat;background-position: 0 50%;line-height:26px;height:auto;float:left;width:100%;}/*标题图标、行高控制*/
+.w_newslistpage_list li .title{float:left;  padding-left: 22px;}/*列表内新闻标题样式控制*/
+.w_newslistpage_list li .newsicon{background:url(../images/newsicon.gif) no-repeat 10px 50%;width:38px;height:26px;float:left;}/*New图标*/
+.w_newslistpage_list li .date{line-height:26px;display:inline;float:right;color:#666;font-family:"Arial Unicode MS";}  /*日期*/
+.w_newslistpage_list li a:link{color:#666;text-decoration:none}/*新闻链接样式*/
+.w_newslistpage_list li a:visited{color:#666;text-decoration:none}/*新闻链接已访问样式*/
+.w_newslistpage_list li a:hover{color:#FF0000;text-decoration:none}/*新闻链接鼠标滑过时样式*/
+.w_newslistpage_list li a:active{color:#666;text-decoration:none}/*新闻链接激活时样式*/
+.w_newslistpage_foot{}/*列表下方内容控制*/
+.w_newslistpage_pager{ float:right;padding:10px;font-size:12px;}/*分页样式*/
+.w_newslistpage_pager span{padding:5px;}/*分页样式*/
+.w_newslistpage_pager span a:link{text-decoration:none;color:#666}/*分页样式*/
+.w_newslistpage_pager span a:visited{text-decoration:none;color:#666}/*分页样式*/
+.w_newslistpage_pager span a:hover{text-decoration:none;color:#FF0000}/*分页样式*/
+.w_newslistpage_pager span a:active{text-decoration:none;color:#666}/*分页样式*/
+.w_newslistpage_pager span a.active{font-weight:bold;color:#ff0000}/*分页样式--被选中的样式*/
+
+/*面包屑*/
+div.w_Navigator_breadcrumb{float:left;font-family:宋体, Arial, Helvetica, sans-serif;font-size:12px;border-bottom: #cacaca 2px solid; width: 710px; padding-left: 20px; margin-bottom: 10px; background: url(http://www.cnpc/sites/gsjs1/EX_STATICPAGES_/_EX_RESOURCE_/dd1.gif) no-repeat;background-position: 10px 50%; height: 32px;line-height:32px;}
+div.w_Navigator_breadcrumb a:link{ text-decoration:none;color:#666666}
+div.w_Navigator_breadcrumb a:visited{text-decoration:none;color:#666666}
+div.w_Navigator_breadcrumb a:hover{text-decoration:none;color:#ff0000}
+div.w_Navigator_breadcrumb a:active{text-decoration:none;color:#666666}
+/*面包屑样式二*/
+div.w_Navigator_breadcrumb_style2{position:absolute;float:right;right:20px;font-family:宋体, Arial, Helvetica, sans-serif;font-size:12px;padding-left:20px;background: url('../images/dd.gif') no-repeat;background-position: 10px 50%;line-height:32px;}
+div.w_Navigator_breadcrumb_style2 a:link{ text-decoration:none;color:#666666}
+div.w_Navigator_breadcrumb_style2 a:visited{text-decoration:none;color:#666666}
+div.w_Navigator_breadcrumb_style2 a:hover{text-decoration:none;color:#ff0000}
+div.w_Navigator_breadcrumb_style2 a:active{text-decoration:none;color:#666666}
+/*面包屑 更多页面布局用*/
+div.w_Navigator_breadcrumb_MoreInfoPL{float:left;font-family:宋体, Arial, Helvetica, sans-serif;font-size:12px; width: 710px; padding-left: 20px; margin-bottom: 10px; background: url(http://www.cnpc/sites/gsjs1/EX_STATICPAGES_/_EX_RESOURCE_/dd1.gif) no-repeat 10px 50%; height: 32px;line-height:32px;}
+div.w_Navigator_breadcrumb_MoreInfoPL a:link{ text-decoration:none;color:#666666}
+div.w_Navigator_breadcrumb_MoreInfoPL a:visited{text-decoration:none;color:#666666}
+div.w_Navigator_breadcrumb_MoreInfoPL a:hover{text-decoration:none;color:#ff0000}
+div.w_Navigator_breadcrumb_MoreInfoPL a:active{text-decoration:none;color:#666666}
+/*频道名称*/
+div.w_ChannelTitle_Title{float:left;font-family:宋体, Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;border-bottom: #cacaca 2px solid; width: 710px; padding-left: 20px; margin-bottom: 10px; background: url('../images/dd1.gif') no-repeat;background-position: 10px 50%; height: 32px;line-height:32px;}
+/*频道名称 更多页面布局用*/
+div.w_ChannelTitle_Title_MoreInfoPL{float:left;font-family:宋体, Arial, Helvetica, sans-serif;font-size:14px;font-weight:bold;border-bottom: #cacaca 2px solid; width: 710px; padding-left: 20px; margin-bottom: 10px;background-position: 10px 50%; height: 32px;line-height:32px;}
+
+/*归档链接*/
+div.w_NewsArchivesLink{font-family:宋体, Arial, Helvetica, sans-serif;font-size:14px;line-height:28px;margin:0 auto;text-align:center;width:100%}
+div.w_NewsArchivesLink a{padding:0 10px;}
+div.w_NewsArchivesLink a:link{text-decoration:none;color:#666666;}
+div.w_NewsArchivesLink a:visited{text-decoration:none;color:#666666;}
+div.w_NewsArchivesLink a:hover{text-decoration:none;color:#ff0000;}
+div.w_NewsArchivesLink a:active{text-decoration:none;color:#666666;}
+/*search-box  新闻细览页*/
+.search_box_s_red{width:248px;}
+.search_box_s_red input { width:244px; vertical-align:top; height:18px; margin-bottom:1px; }
+.search_box_s_red select { vertical-align:top; width:141px;  height:20px;  font-size:12px;  }
+.search_box_s_red a:link { margin-left:1px;}
+
+/*search-box 新闻更多页*/
+.search_box_s_gray{width:196px;}
+.search_box_s_gray input{ width:192px; vertical-align:top;  height:18px;  margin-bottom:1px;}
+.search_box_s_gray select{ width: 106px; vertical-align:top; height:20px; font-size:12px; }
+.search_box_s_gray a:link { margin-left:1px;}
+
+
+/*search-box 搜索首页*/
+.search_box_s_index{ width:227px; background:url("../Images/search10.jpg"); height:28px;}
+.search_box_s_index input{  width:77px;  margin-left:8px; vertical-align:top ; height:16px;  margin-top:2px; }
+.search_box_s_index select{ vertical-align:top;height:20px; margin-top:2px; width:69px; }
+.search_box_s_index a img  {margin-top:2px;}
+.s4-search INPUT.ms-sbplain{
+	width : 77px !important;
+}
+/*新闻细览--报告解读*/
+.w_newslist_box_newsbox{
+	margin-top:10px;
+	width:248px;	/*此处如有变化，可覆盖*/
+	height:200px;
+	border:1px #ffaf7a solid;
+}
+.w_newslist_head_newsbox{
+	width:100%;
+	height:32px;
+}
+.w_newslist_list_newsbox{
+	width:100%;
+	height:auto;
+	margin:4px auto;
+}
+.w_newslist_list_newsboxinner li{
+	width:100%;
+	height:26px;
+	line-height:26px;
+	vertical-align:middle;
+}
+.w_newslist_list_newsboxinner li .title{
+	float:left;
+	display:block;
+	width:100%;
+	height:26px;
+	background:url('http://www.cnpc/PageAssets/images/xwzxr_22.jpg') no-repeat 6px 50%;
+}
+.w_newslist_list_newsboxinner li .title a{
+	font-size:14px;
+	margin:0px 0px 0px 20px;
+}
+.w_newslist_list_newsboxinner li .title a:link,.w_newslist_list_newsboxinner li .title a:visited{
+	color:#383838;
+	text-decoration:none;
+}
+.w_newslist_list_newsboxinner li .title a:hover{
+	color:red;
+}
+.w_newslist_foot_newsbox{
+	width:100%;
+	height:27px;
+}
+.w_newslist_foot_newsbox span,.w_newslist_foot_newsbox span img{
+	display:block;
+	width:101px;
+	height:27px;
+}
+.w_newslist_foot_newsbox .sp1{
+	float:left;
+	margin-left:8px;
+}
+.w_newslist_foot_newsbox .sp2{
+	float:right;
+	margin-right:8px;
+}/*新闻细览--报告解读*/
+/*layers--学习孙波*/
+#sun{
+	width:248px;
+	border:1px #506273 solid;
+}
+.sun_header,.sun_intro,#sun .w_newslist_box_news,.sun_video,.sun_memo{
+	width:100%;
+	height:auto;
+}
+#sun img{
+	display:block;
+}
+/*newslist*/
+#sun .w_newslist_head_news,#sun .w_newslist_foot_news{
+	display:none;
+}
+.w_newslist_list_news{
+	width:100%;
+	height:auto;
+	margin:4px auto;
+}
+.w_newslist_list_news li{
+	width:100%;
+	height:26px;
+	line-height:26px;
+	vertical-align:middle;
+}
+.w_newslist_list_news li .title{
+	float:left;
+	display:block;
+	width:100%;
+	height:26px;
+	background:url('http://www.cnpc/PageAssets/images/xwzxr_22.jpg') no-repeat 10px 50%;
+}
+.w_newslist_list_news li .title a{
+	font-size:14px;
+	margin:0px 0px 0px 24px;
+}
+.w_newslist_list_news li .title a:link,.w_newslist_list_news li .title a:visited{
+	color:#383838;
+	text-decoration:none;
+}
+.w_newslist_list_news li .title a:hover{
+	text-decoration:underline;
+}
+.w_newslist_list_video li .title{
+	background:url('../images/xl04.jpg') no-repeat 6px 5px;
+	_background:url('../images/xl04.jpg') no-repeat 6px 50%;
+}
+/*contents*/
+.sun_intro{
+	margin:6px auto 10px auto;
+}
+.sun_intro img{
+	margin:0px auto;
+}
+.sun_video{
+	margin:10px auto 6px auto;
+}
+.sun_memo{
+	margin-top:6px;
+}
+/*学习孙波*/
+
+/* Leader Spoken */
+#app_main{
+	width:100% !important;
+}

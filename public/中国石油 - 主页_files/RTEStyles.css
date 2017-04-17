@@ -1,0 +1,25 @@
+﻿/*Begin Add font face and size*/
+.ms-rteThemeFontFace-3
+{
+    -ms-name: "楷体";
+    font-family: "KaiTi" , "楷体" , "楷体_gb2312";
+}
+.ms-rteThemeFontFace-4
+{
+    -ms-name: "仿宋";
+    font-family: "FangSong" , "FangSong_gb2312" , "仿宋_gb2312";
+}
+.ms-rteThemeFontFace-5
+{
+    -ms-name: "黑体";
+    font-family: "SimHei" , "黑体";
+}
+.ms-rteFontSize-9
+{
+  font-size: 14pt;
+}
+.ms-rteFontSize-10
+{
+  font-size: 16pt;
+}
+/*End Add font face and size*/

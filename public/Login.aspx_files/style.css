@@ -1,0 +1,55 @@
+#PicNews {
+	POSITION: relative; TOP: -10px
+}
+#f_div {
+	OVERFLOW: hidden; WIDTH: 190px; HEIGHT: 190px
+}
+#f_imgDiv {
+	
+}
+#f_img {
+	filter: revealTrans(duration=1,transition=6); border-style:none; width:100%; border-bottom-style:solid; border-bottom-width:1px; margin:0px,0px,,0px;
+}
+#f_buttonDiv {
+	OVERFLOW: hidden; WIDTH: 100%; POSITION: relative; TOP: -15px; HEIGHT: 15px;
+}
+#all_button {
+	BACKGROUND: #fff;
+}
+#f_line {
+	filter: progid:DXImageTransform.Microsoft.Alpha(startX=0, startY=0, finishX=100, finishY=100,style=1,opacity=0,finishOpacity=40); FLOAT: right; WIDTH: 100px; BACKGROUND-COLOR: #000
+}
+#f_buttonDiv A {
+	PADDING-RIGHT: 0px! important; PADDING-LEFT: 0px! important; FONT-WEIGHT: bold; FONT-SIZE: 12px; FLOAT: right; PADDING-BOTTOM: 0px! important; OVERFLOW: hidden; BORDER-LEFT: #fff 1px solid; WIDTH: 22px; COLOR: #fff; PADDING-TOP: 1px; HEIGHT: 14px; TEXT-ALIGN: center; TEXT-DECORATION: none; line-height:14px;
+}
+#f_buttonDiv A:link {
+	BACKGROUND: #000
+}
+#f_buttonDiv A:visited {
+	BACKGROUND: #000
+}
+#f_buttonDiv A:active {
+	BACKGROUND: #000
+}
+#f_buttonDiv A:hover {
+	BACKGROUND: #dd0000
+}
+#f_buttonDiv A.on:link {
+	BACKGROUND: #dd0000
+}
+#f_buttonDiv A.on:visited {
+	BACKGROUND: #dd0000
+}
+#f_buttonDiv A.on:active {
+	BACKGROUND: #dd0000
+}
+#f_buttonDiv A.on:hover {
+	BACKGROUND: #dd0000
+}
+#f_text {
+	FONT-SIZE: 12px; POSITION: relative; TOP: -12px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#Layer1 {
+	Z-INDEX: 1; LEFT: 487px; WIDTH: 200px; POSITION: absolute; TOP: 60px; HEIGHT: 190px
+}
+
