@@ -1,36 +1,64 @@
 {
-  "port": 4000,
-  "name": "crawler",
+  "cmdb":{
+    "port":3001
+  },
+  "kb":{
+    "port":3000
+  },
+  "auth":{
+    "port":3002
+  },
+  "notifier":{
+    "port":3004
+  },
+  "scmpz":{
+    "port":3003
+  },
+  "gateway":{
+    "port":8080
+  },
+  "privateIP":"localhost",
+  "perPageSize":2000,
+  "wrapResponse": true,
+  "retrieveObjectFromId":true,
+  "additionalPropertyCheck":false,
   "logger":{
-      "appenders": [
-        {
-          "type": "console"
-        },
-        {
-          "type": "file",
-          "filename": "crawler.log",
-          "maxLogSize": 20480,
-          "numBackups": 5,
-          "category": "crawler"
-        }
-      ],
-      "replaceConsole": true,
-      "defaultLevel":"INFO"
-    },
-
-    "elasticsearch":{
-        "host": "localhost",
-        "port": 9200
-    },
-
-	"redis": {
-		"host": "localhost",
-		"port": 6379
-	},
-
-   "crawlers":{
-      "jrgz":{"url":"http://localhost:4000/main.html"}
-   }
-
-
+    "defaultLevel":"DEBUG",
+    "logpath":"../logs"
+  },
+  "neo4j": {
+    "host": "localhost",
+    "port": 7687,
+    "http_port":7474,
+    "user": "neo4j",
+    "password": "neo4j"
+  },
+  "elasticsearch":{
+    "host": "localhost",
+    "port": 9200,
+    "requestTimeout":3000,
+    "mode": "strict"
+  },
+  "redis": {
+    "host": "localhost",
+    "port": 6379
+  },
+  "postgres": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "test",
+    "user": "postgres",
+    "password": "postgres",
+    "max": 50,
+    "idleTimeoutMillis": 3000,
+    "zhparser":"knowledge_zhcfg"
+  },
+  "runtime_data":{
+    "cmdb":{
+      "base_dir":"../runtime/cmdb",
+      "json_export_dir":"../runtime/cmdb/export",
+      "excel_import_dir":"../runtime/cmdb/configurationItems_excel",
+      "qr_image_dir":"../runtime/cmdb/qr_image"
+    }
+  }
 }

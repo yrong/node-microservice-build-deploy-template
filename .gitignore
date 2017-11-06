@@ -1,5 +1,10 @@
-node_modules
+node_modules/
+config.js
+public/headimages/
 .idea
+npm-debug.log
+temp
 dump.rdb
+wheels
 logs
-
+build
