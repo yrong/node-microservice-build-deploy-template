@@ -22,6 +22,8 @@
   "wrapResponse": true,
   "retrieveObjectFromId":true,
   "additionalPropertyCheck":false,
+  "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
+  "expiration": 1800,
   "logger":{
     "defaultLevel":"DEBUG",
     "logpath":"../logs"
@@ -52,6 +54,35 @@
     "max": 50,
     "idleTimeoutMillis": 3000,
     "zhparser":"knowledge_zhcfg"
+  },
+  "mysql": {
+    "host": "localhost",
+    "port" : 3306,
+    "user" : "root",
+    "password" : "root",
+    "database" : "test"
+  },
+  "ldap":{
+    "url": "ldap://localhost:389",
+    "bindType":"dn",
+    "bindDn": "cn=admin,dc=test,dc=com",
+    "bindCredentials": "admin",
+    "searchFilter": "(cn={{username}})",
+    "userSearchBase": "ou=users,dc=test,dc=com",
+    "departmentSearchBase": "dc=test,dc=com",
+    "userClass": "posixAccount",
+    "userAttributes":["dn","cn","uidNumber"],
+    "departmentClass":"posixGroup",
+    "departmentAttributes":["dn","cn","gidNumber"],
+    "reconnect": true
+  },
+  "nextcloud":{
+    "host":"http://localhost:8089/FileStore",
+    "adminuser":"admin",
+    "password":"admin",
+    "group":"share",
+    "permissions": 1,//1 = read; 2 = update; 4 = create; 8 = delete; 16 = share; 31 = all
+    "publicUpload": true //allow public upload or not
   },
   "runtime_data":{
     "cmdb":{
