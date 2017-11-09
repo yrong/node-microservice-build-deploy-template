@@ -84,6 +84,16 @@
     "permissions": 1,//1 = read; 2 = update; 4 = create; 8 = delete; 16 = share; 31 = all
     "publicUpload": true //allow public upload or not
   },
+  "postgres_notification": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "notification",
+    "user": "postgres",
+    "password": "postgres",
+    "max": 50,
+    "idleTimeoutMillis": 3000,
+    "zhparser":"knowledge_zhcfg"
+  },
   "runtime_data":{
     "cmdb":{
       "base_dir":"../runtime/cmdb",
