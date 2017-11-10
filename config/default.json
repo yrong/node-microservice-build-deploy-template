@@ -15,7 +15,11 @@
     "port":3003
   },
   "gateway":{
-    "port":8080
+    "port":8080,
+    "proxy_rules":{
+      "/cmdb-api": "{{cmdb}}",
+      "/kb-api": "{{kb}}"
+    }
   },
   "privateIP":"localhost",
   "perPageSize":2000,
@@ -45,7 +49,7 @@
     "host": "localhost",
     "port": 6379
   },
-  "postgres": {
+  "postgres-kb": {
     "host": "localhost",
     "port": 5432,
     "database": "test",
@@ -55,12 +59,19 @@
     "idleTimeoutMillis": 3000,
     "zhparser":"knowledge_zhcfg"
   },
-  "mysql": {
+  "mysql-auth": {
     "host": "localhost",
     "port" : 3306,
     "user" : "root",
     "password" : "root",
     "database" : "test"
+  },
+  "mysql-zabbix": {
+    "host": "localhost",
+    "port": 3306,
+    "user": "root",
+    "password": "root",
+    "database": "zabbix"
   },
   "ldap":{
     "url": "ldap://localhost:389",
@@ -84,7 +95,7 @@
     "permissions": 1,//1 = read; 2 = update; 4 = create; 8 = delete; 16 = share; 31 = all
     "publicUpload": true //allow public upload or not
   },
-  "postgres_notification": {
+  "postgres-notification": {
     "host": "localhost",
     "port": 5432,
     "database": "notification",
@@ -95,11 +106,22 @@
     "zhparser":"knowledge_zhcfg"
   },
   "runtime_data":{
+    "base_dir":"../runtime",
     "cmdb":{
-      "base_dir":"../runtime/cmdb",
-      "json_export_dir":"../runtime/cmdb/export",
-      "excel_import_dir":"../runtime/cmdb/configurationItems_excel",
-      "qr_image_dir":"../runtime/cmdb/qr_image"
+      "json_export_dir":"/cmdb/export",
+      "qr_image_dir":"/cmdb/qr_image"
+    },
+    "scmpz":{
+      "image_dir":"/scmpz/image"
+    },
+    "upload": {
+      "cmdb-excel": {
+        "provider": "local",
+        "urlPath": "/cmdb/upload/xslx",
+        "mimetypes": [
+          "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        ]
+      }
     }
   }
 }
