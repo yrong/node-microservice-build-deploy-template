@@ -18,13 +18,13 @@
     "port":8080,
     "proxy_rules":{
       "/cmdb-api": "{{cmdb}}",
-      "/kb-api": "{{kb}}"
+      "/kb-api": "{{kb}}",
+      "/scmpz-api": "{{scmpz}}"
     }
   },
   "privateIP":"localhost",
   "perPageSize":2000,
   "wrapResponse": true,
-  "retrieveObjectFromId":true,
   "additionalPropertyCheck":false,
   "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
   "expiration": 1800,
@@ -112,7 +112,7 @@
       "qr_image_dir":"/cmdb/qr_image"
     },
     "scmpz":{
-      "image_dir":"/scmpz/image"
+      "image_dir":"/scmpz/images"
     },
     "upload": {
       "cmdb-excel": {
@@ -121,6 +121,20 @@
         "mimetypes": [
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         ]
+      },
+      "share": {
+        "provider": "nc",
+        "nc_share_path":"/share",
+        "limits":{
+          "fileSize":1000000
+        }
+      },
+
+      "image": {
+        "provider": "nc",
+        "nc_share_path":"/share/images",
+        "nc_image_preview": true,
+        "mimetypes": ["image/png","image/bmp","image/jpeg"]
       }
     }
   }
