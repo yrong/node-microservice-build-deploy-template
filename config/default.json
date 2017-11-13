@@ -29,8 +29,7 @@
   "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
   "expiration": 1800,
   "logger":{
-    "defaultLevel":"DEBUG",
-    "logpath":"../logs"
+    "defaultLevel":"DEBUG"
   },
   "neo4j": {
     "host": "localhost",
@@ -106,7 +105,6 @@
     "zhparser":"knowledge_zhcfg"
   },
   "runtime_data":{
-    "base_dir":"../runtime",
     "cmdb":{
       "json_export_dir":"/cmdb/export",
       "qr_image_dir":"/cmdb/qr_image"
