@@ -35,7 +35,7 @@
     "host": "localhost",
     "port": 7687,
     "user": "neo4j",
-    "password": "neo4j"
+    "password": "admin"
   },
   "elasticsearch":{
     "host": "localhost",
@@ -50,12 +50,12 @@
   "postgres-kb": {
     "host": "localhost",
     "port": 5432,
-    "database": "test",
+    "database": "kb",
     "user": "postgres",
     "password": "postgres",
     "max": 50,
     "idleTimeoutMillis": 3000,
-    "zhparser":"knowledge_zhcfg"
+    "zhparser":"chinese"
   },
   "mysql-auth": {
     "host": "localhost",
@@ -95,13 +95,13 @@
   },
   "postgres-notification": {
     "host": "localhost",
-    "port": 5432,
+    "port": 5433,
     "database": "notification",
     "user": "postgres",
     "password": "postgres",
     "max": 50,
     "idleTimeoutMillis": 3000,
-    "zhparser":"knowledge_zhcfg"
+    "zhparser":"chinese"
   },
   "runtime_data":{
     "cmdb":{

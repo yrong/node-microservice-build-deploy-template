@@ -1,0 +1,19 @@
+version: '2'
+services:
+  cmdb:
+      image: cmdb:$CMDB_VERSION
+      container_name: cmdb
+      volumes:
+        - $LOG_PATH:/logs
+        - $RUNTIME_PATH:/runtime
+        - $NODE_CONFIG_DIR:/config
+        - $LICENSE_PATH:/license
+      environment:
+        - NEO4J_HOST
+        - REDIS_HOST
+        - ES_HOST
+        - NEO4J_USER
+        - NEO4J_PASSWD
+        - NODE_ENV
+      ports:
+        - 3001:3001

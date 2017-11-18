@@ -1,0 +1,76 @@
+version: '2'
+
+services:
+
+  redis:
+      image: redis:3.2
+      container_name: redis
+      command: redis-server --appendonly yes
+      volumes:
+        - $DB_DATA/redis:/data
+      ports:
+        - 6379:6379
+
+  neo4j:
+      image: neo4j:3.3
+      container_name: neo4j
+      environment:
+        - NEO4J_AUTH=$NEO4J_USER/$NEO4J_PASSWD
+        - NEO4J_dbms_memory_pagecache_size=2G
+        - NEO4J_dbms_memory_heap_maxSize=2G
+      volumes:
+        - $DB_DATA/neo4j/data:/data
+        - $DB_DATA/neo4j/logs:/logs
+      ports:
+        - 7474:7474
+        - 7687:7687
+
+  es:
+    image: elasticsearch:5.6-alpine
+    container_name: es
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    environment:
+      - cluster.name=es-cluster
+      - discovery.type=single-node
+      - discovery.zen.minimum_master_nodes=1
+      - xpack.security.enabled=false
+      - xpack.monitoring.enabled=false
+      - xpack.ml.enabled=false
+      - xpack.watcher.enabled=false
+      - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
+    volumes:
+      - $DB_DATA/elasticsearch:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+
+  pg-kb:
+      build: ./pg
+      image: pg9.6:zhparser
+      container_name: pg-kb
+      ports:
+        - "5432:5432"
+      environment:
+        - POSTGRES_USER=$PG_USER
+        - POSTGRES_PASSWORD=$PG_PASSWD
+        - POSTGRES_DB=$PG_DB_KB
+      volumes:
+        - $DB_DATA/pg-$PG_DB_KB:/var/lib/postgresql/data
+
+  pg-notification:
+        build: ./pg
+        image: pg9.6:zhparser
+        container_name: pg-notification
+        ports:
+          - "5433:5432"
+        environment:
+          - POSTGRES_USER=$PG_USER
+          - POSTGRES_PASSWORD=$PG_PASSWD
+          - POSTGRES_DB=$PG_DB_NOTIFICATION
+        volumes:
+          - $DB_DATA/pg-PG_DB_NOTIFICATION:/var/lib/postgresql/data
