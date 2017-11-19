@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+NODE_ENV=production
+
 # 程序日志目录
 export LOG_PATH=/ssd/logs
 

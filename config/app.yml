@@ -15,5 +15,6 @@ services:
         - NEO4J_USER
         - NEO4J_PASSWD
         - NODE_ENV
+        - NODE_NAME=cmdb
       ports:
         - 3001:3001

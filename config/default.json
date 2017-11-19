@@ -22,7 +22,7 @@
       "/scmpz-api": "{{scmpz}}"
     }
   },
-  "privateIP":"localhost",
+  "privateIP":"192.168.0.100",
   "perPageSize":2000,
   "wrapResponse": true,
   "additionalPropertyCheck":false,
