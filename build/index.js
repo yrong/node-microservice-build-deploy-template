@@ -1,9 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
 const WebpackShellPlugin = require('webpack-shell-plugin')
-const GitRevisionPlugin = require('git-revision-webpack-plugin')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
 
 let mods = {};
@@ -18,13 +16,12 @@ let plugins = [
     new UglifyJSPlugin({
         sourceMap: devtool && (devtool.indexOf("sourcemap") >= 0 || devtool.indexOf("source-map") >= 0)
     }),
-    new CleanWebpackPlugin(['build']),
-    new GitRevisionPlugin(),
-    new WebpackShellPlugin({onBuildEnd:[`/bin/bash ./config/postbuild.sh`]})
+    new WebpackShellPlugin({onBuildEnd:[`/bin/bash ../config/build/postbuild.sh`]})
 ];
 
 module.exports = (entry, packages) => {
-    plugins = [...plugins,new CopyWebpackPlugin(packages, {ignore: ['*.gitignore']}),]
+    entry = entry||{}, entry = Object.assign(entry,{server:'./app.js'})
+    plugins = [...plugins,new CopyWebpackPlugin(packages, {ignore: ['*.gitignore']})]
     return {
         target: 'node',
         entry: entry,
@@ -44,7 +41,10 @@ module.exports = (entry, packages) => {
                     test: /\.js$/,
                     exclude: /(node_modules|bower_components)/,
                     use: {
-                        loader: 'babel-loader'
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [["env", {"targets": {"node": "current"}}]]
+                        }
                     }
                 }
             ]

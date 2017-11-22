@@ -1,5 +1,7 @@
 #! /bin/bash
 
+yarn install --production=true
+cp -rf ./node_modules ./build
 git_commit_id=$(git rev-parse HEAD)
 git_commit_date=$(git show -s --format=%ci HEAD |tail |awk '{print $1}')
 filename="$git_commit_date-$git_commit_id"
