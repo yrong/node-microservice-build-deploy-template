@@ -1,0 +1,24 @@
+{
+  "id": "WareHouse",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "area":{
+      "type": "number"
+    },
+    "capacity":{
+      "type": "number"
+    }
+  },
+  "required": ["name"],
+  "route": "/wareHouses",
+  "uniqueKeys":["name"]
+}

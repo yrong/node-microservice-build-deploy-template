@@ -1,0 +1,20 @@
+{
+  "id": "User",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "lang": {
+      "type": "string"
+    },
+    "type":{
+      "type": "integer"
+    },
+    "theme":{
+      "type":"string"
+    }
+  },
+  "route":"/users",
+  "uniqueKeys":["name"]
+}

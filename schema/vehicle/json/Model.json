@@ -1,0 +1,20 @@
+{
+  "id": "Model",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "brand":{
+      "type": "string",
+      "schema":"Brand",
+      "relationship":{"name":"BelongsTo"}
+    }
+  },
+  "required": ["name"],
+  "route":"/models",
+  "uniqueKeys":["name"]
+}

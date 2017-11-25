@@ -1,0 +1,18 @@
+{
+  "id": "Brand",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon_url":{
+      "type": "string"
+    }
+  },
+  "required": ["name"],
+  "route":"/brands",
+  "uniqueKeys":["name"]
+}
