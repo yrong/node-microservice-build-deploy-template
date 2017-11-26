@@ -1,6 +1,6 @@
 {
   "name": "redis-json-schema-init",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "bin": {
     "initSchema": "index.js"
   },

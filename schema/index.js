@@ -32,11 +32,12 @@ const executeCypher = (cql,params)=>{
 }
 
 const initElasticSearchSchema = async ()=>{
-    let categories = _.map(fs.readdirSync(process.env['ES_SCHEMA_DIR']),filename=>filename.slice(0, -5))
+    let es_schema_dir = `${process.env['NODE_CONFIG_DIR']}/../schema/${process.env['NODE_NAME']}/search`
+    let categories = _.map(fs.readdirSync(es_schema_dir),filename=>filename.slice(0, -5))
     let schema_promise = (category)=>{
         return new Promise((resolve,reject)=>{
             es_client.indices.delete({index:[category]},(err)=>{
-                es_client.indices.create({index:category,body:JSON.parse(fs.readFileSync(`${process.env['ES_SCHEMA_DIR']}/${category}.json`, 'utf8'))},(err)=>{
+                es_client.indices.create({index:category,body:JSON.parse(fs.readFileSync(`${es_schema_dir}/${category}.json`, 'utf8'))},(err)=>{
                     resolve()
                 })
             })
@@ -61,12 +62,13 @@ const initNeo4jConstraints = async ()=>{
 }
 
 const initJsonSchema = async ()=>{
-    let files = fs.readdirSync(process.env['JSON_SCHEMA_DIR']),schma_obj,
-        redisOption = {host:`${process.env['REDIS_HOST']||config.get('redis.host')}`,port:config.get('redis.port'),dbname:process.env['SCHEMA_PREFIX']||'SCHEMA'}
+    let json_schema_dir = `${process.env['NODE_CONFIG_DIR']}/../schema/${process.env['NODE_NAME']}/json`
+    let files = fs.readdirSync(json_schema_dir),schma_obj,
+        redisOption = {host:`${process.env['REDIS_HOST']||config.get('redis.host')}`,port:config.get('redis.port'),dbname:process.env['NODE_NAME']||'schema'}
     schema.initialize({redisOption})
     await schema.clearSchemas()
     for(let fileName of files){
-        schma_obj = JSON.parse(fs.readFileSync(process.env['JSON_SCHEMA_DIR'] + '/' + fileName, 'utf8'))
+        schma_obj = JSON.parse(fs.readFileSync(json_schema_dir + '/' + fileName, 'utf8'))
         schema.checkSchema(schma_obj)
         await schema.persitSchema(schma_obj)
     }
