@@ -1,5 +1,5 @@
 {
-  "id": "WareHouse",
+  "id": "Warehouse",
   "type": "object",
   "properties": {
     "name": {
@@ -19,6 +19,6 @@
     }
   },
   "required": ["name"],
-  "route": "/wareHouses",
+  "route": "/warehouses",
   "uniqueKeys":["name"]
 }
