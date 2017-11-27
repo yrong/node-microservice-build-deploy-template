@@ -18,12 +18,12 @@
       "uniqueItems": true
     },
     "committer":{
-      "type": "integer",
+      "type": "string",
       "schema":"User",
       "relationship":{"name":"COMMITTED_BY","reverse":true}
     },
     "executor":{
-      "type": "integer",
+      "type": "string",
       "schema":"User",
       "relationship":{"name":"EXECUTED_BY","reverse":true}
     },

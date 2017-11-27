@@ -16,35 +16,6 @@
         "name": "LocateIn"
       }
     },
-    "exterior": {
-      "type": "string",
-      "schema": "Exterior",
-      "relationship": {
-        "name": "ExteriorOf"
-      }
-    },
-    "interior": {
-      "type": "string",
-      "schema": "Interior",
-      "relationship": {
-        "name": "InteriorOf"
-      }
-    },
-    "style": {
-      "type": "string",
-      "schema": "Style",
-      "relationship": {
-        "name": "StyleOf"
-      }
-    },
-    "status": {
-      "type": "string",
-      "enum": [
-        "in_stock",
-        "booked",
-        "sold"
-      ]
-    },
     "vin": {
       "type": "string"
     },
@@ -54,12 +25,6 @@
     "advice_price": {
       "type": "number"
     },
-    "order_price":{
-      "type": "number"
-    },
-    "sale_price": {
-      "type": "number"
-    },
     "production_date": {
       "type": "string",
       "format": "date"
@@ -67,19 +32,10 @@
     "deposit_date":{
       "type": "string",
       "format": "date"
-    },
-    "sale_date":{
-      "type" : "string",
-      "format": "date"
-    },
-    "order_no":{
-      "type": "string"
-    },
-    "icon":{
-      "type": "string"
     }
   },
   "required": ["model"],
   "route": "/vehicles",
+  "uniqueKeys":["vin"],
   "searchable":{"index":"vehicle"}
 }

@@ -1,6 +1,6 @@
 {
   "name": "redis-json-schema-init",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.4",
   "bin": {
     "initSchema": "index.js"
   },
@@ -10,7 +10,7 @@
     "config": "^1.25.1",
     "elasticsearch": "^12.1.3",
     "lodash": "^4.17.4",
-    "redis-json-schema": "1.0.0-beta.9",
+    "redis-json-schema": "1.0.1-beta.2",
     "neo4j-driver": "^1.5.0",
     "parse-neo4j-fork": "^0.6.10"
   }

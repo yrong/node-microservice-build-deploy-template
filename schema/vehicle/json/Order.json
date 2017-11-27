@@ -1,0 +1,33 @@
+{
+  "id": "Order",
+  "type": "object",
+  "properties": {
+    "subscriber": {
+      "type": "string",
+      "schema":"User",
+      "relationship": {
+        "name": "SubscribeBy"
+      }
+    },
+    "occurrence_date":{
+      "type": "string",
+      "format": "date"
+    },
+    "entries":{
+      "type":"array",
+      "items": {
+        "type": "object",
+        "properties" : {
+          "model":{"type":"string","schema":"Model"},
+          "warehouse":{"type":"string","schema":"Warehouse"},
+          "price":{"type": "number"},
+          "quantity":{"type": "number"}
+        }
+      }
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "route":"/orders"
+}

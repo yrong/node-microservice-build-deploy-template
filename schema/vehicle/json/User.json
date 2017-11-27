@@ -5,16 +5,15 @@
     "name": {
       "type": "string"
     },
-    "lang": {
-      "type": "string"
+    "email": {
+      "type": "string",
+      "format": "email"
     },
-    "type":{
-      "type": "integer"
-    },
-    "theme":{
+    "passwd":{
       "type":"string"
     }
   },
   "route":"/users",
-  "uniqueKeys":["name"]
+  "required": ["name"],
+  "uniqueKeys":["name","email"]
 }

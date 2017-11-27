@@ -15,7 +15,7 @@
       "default": false
     },
     "responsibility":{
-        "type": "integer",
+        "type": "string",
         "schema":"User",
         "relationship":{"name":"RESPONSIBLE_FOR","reverse":true}
     },
