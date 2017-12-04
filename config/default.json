@@ -25,7 +25,7 @@
       "/scmpz-api": "{{scmpz}}"
     }
   },
-  "privateIP":"192.168.0.100",
+  "privateIP":"localhost",
   "perPageSize":2000,
   "wrapResponse": true,
   "additionalPropertyCheck":false,
@@ -115,9 +115,9 @@
       "image_dir":"/scmpz/images"
     },
     "upload": {
-      "cmdb-excel": {
+      "excel": {
         "provider": "local",
-        "urlPath": "/cmdb/upload/xslx",
+        "urlPath": "/upload/xslx",
         "mimetypes": [
           "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         ]
