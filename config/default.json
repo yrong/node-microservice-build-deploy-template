@@ -29,6 +29,7 @@
   "perPageSize":2000,
   "wrapResponse": true,
   "additionalPropertyCheck":false,
+  "preImportReference":true,
   "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
   "expiration": 1800,
   "logger":{
