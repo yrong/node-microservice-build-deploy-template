@@ -15,7 +15,8 @@
     "port":3003
   },
   "vehicle":{
-    "port":3005
+    "port":3005,
+    "validateOrderPayment":false
   },
   "gateway":{
     "port":8080,
