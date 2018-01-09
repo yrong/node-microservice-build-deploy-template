@@ -16,7 +16,8 @@
   },
   "vehicle":{
     "port":3005,
-    "validateOrderPayment":false
+    "validateOrderPayment":false,
+    "orderExpiration": 86400
   },
   "gateway":{
     "port":8080,
