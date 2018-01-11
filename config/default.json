@@ -114,6 +114,9 @@
       "json_export_dir":"/cmdb/export",
       "qr_image_dir":"/cmdb/qr_image"
     },
+    "vehicle":{
+      "json_export_dir":"/vehicle/export"
+    },
     "scmpz":{
       "image_dir":"/scmpz/images"
     },
