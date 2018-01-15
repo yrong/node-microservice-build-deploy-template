@@ -17,7 +17,9 @@
   "vehicle":{
     "port":3005,
     "validateOrderPayment":false,
-    "orderExpiration": 86400
+    "orderExpiredPeriod": 86400,
+    "orderExpiredWarningPeriod": 79200,
+    "orderExpiredEventSubscriber":{"roles":["financial_staff"]}
   },
   "gateway":{
     "port":8080,
