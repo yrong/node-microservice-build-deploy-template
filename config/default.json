@@ -29,6 +29,9 @@
       "/scmpz-api": "{{scmpz}}"
     }
   },
+  "filechain":{
+    "port":8081
+  },
   "privateIP":"localhost",
   "perPageSize":2000,
   "wrapResponse": true,
@@ -111,6 +114,18 @@
     "idleTimeoutMillis": 3000,
     "zhparser":"chinese"
   },
+  "ipfs":{
+    "api_host": "localhost",
+    "api_port": 5001,
+    "gateway_port":8080
+  },
+  "web3":{
+    "host": "localhost",
+    "port": 7545,
+    "account_address":"0x627306090abaB3A6e1400e9345bC60c78a8BEf57",
+    "publish_contract_address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10",
+    "publish_contract_gas_limit": 300000
+  },
   "runtime_data":{
     "cmdb":{
       "json_export_dir":"/cmdb/export",
@@ -137,12 +152,14 @@
           "fileSize":1000000
         }
       },
-
       "image": {
         "provider": "nc",
         "nc_share_path":"/share/images",
         "nc_image_preview": true,
         "mimetypes": ["image/png","image/bmp","image/jpeg"]
+      },
+      "filechain":{
+        "provider": "fc"
       }
     }
   }
