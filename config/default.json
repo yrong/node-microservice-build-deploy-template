@@ -42,6 +42,7 @@
   "preImportReference":true,
   "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
   "expiration": 1800,
+  "userFieldsIgnored4Token":["passwd","id"],
   "logger":{
     "defaultLevel":"DEBUG"
   },
