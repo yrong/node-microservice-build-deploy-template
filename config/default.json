@@ -44,7 +44,7 @@
   "expiration": 1800,
   "userFieldsIgnored4Token":["passwd","id"],
   "logger":{
-    "defaultLevel":"DEBUG"
+    "defaultLevel":"INFO"
   },
   "neo4j": {
     "host": "localhost",
@@ -55,7 +55,6 @@
   "elasticsearch":{
     "host": "localhost",
     "port": 9200,
-    "requestTimeout":3000,
     "mode": "strict"
   },
   "redis": {
@@ -108,7 +107,7 @@
     "permissions": 1,//1 = read; 2 = update; 4 = create; 8 = delete; 16 = share; 31 = all
     "publicUpload": true //allow public upload or not
   },
-  "postgres-notification": {
+  "postgres-notifier": {
     "host": "localhost",
     "port": 5433,
     "database": "notification",
