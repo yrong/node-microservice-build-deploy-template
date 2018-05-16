@@ -161,6 +161,11 @@
         "nc_image_preview": true,
         "mimetypes": ["image/png","image/bmp","image/jpeg"]
       },
+      "image_resize": {
+        "provider": "local",
+        "urlPath": "/upload/image_resize",
+        "mimetypes": ["image/png","image/bmp","image/jpeg"]
+      },
       "filechain":{
         "provider": "fc"
       }
