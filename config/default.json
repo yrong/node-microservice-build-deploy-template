@@ -1,8 +1,12 @@
 {
   "cmdb":{
     "port":3001,
-    "expiredWarningPeriod": 30,
-    "expiredPeriodTimeUnit": "days"
+    "expiredWarningPeriod": 180,
+    "expiredPeriodTimeUnit": "days",
+    "expiredEventSubscriber":{
+      "roles":["superAdmin"],
+      "mail":{"to":["test@qq.com"]}
+    }
   },
   "kb":{
     "port":3000
@@ -45,6 +49,16 @@
   "userFieldsIgnored4Token":["passwd","id","token"],
   "logger":{
     "defaultLevel":"INFO"
+  },
+  "mail": {
+    "host": "smtp.qq.com",
+    "secure": true,
+    "port": 465,
+    "auth": {
+      "user": "test@qq.com",
+      "pass": "ksbwhobbkgngbddi"
+    },
+    "from":"\"test\" <test@qq.com>"
   },
   "neo4j": {
     "host": "localhost",
