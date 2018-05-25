@@ -1,5 +1,6 @@
 {
   "cmdb":{
+    "ip":"192.168.0.100",
     "port":3001,
     "expiredWarningPeriod": 180,
     "expiredPeriodTimeUnit": "days",
@@ -9,18 +10,23 @@
     }
   },
   "kb":{
+    "ip":"192.168.0.100",
     "port":3000
   },
   "auth":{
+    "ip":"192.168.0.100",
     "port":3002
   },
   "notifier":{
+    "ip":"192.168.0.100",
     "port":3004
   },
   "scmpz":{
+    "ip":"192.168.0.100",
     "port":3003
   },
   "vehicle":{
+    "ip":"192.168.0.100",
     "port":3005,
     "validateOrderPayment":false,
     "expiredPeriod": 86400,
@@ -29,6 +35,7 @@
     "expiredEventSubscriber":{"roles":["financial_staff"]}
   },
   "gateway":{
+    "ip":"192.168.0.100",
     "port":8080,
     "proxy_rules":{
       "/cmdb-api": "{{cmdb}}",
@@ -37,9 +44,9 @@
     }
   },
   "filechain":{
+    "ip":"192.168.0.100",
     "port":8081
   },
-  "privateIP":"localhost",
   "perPageSize":2000,
   "wrapResponse": true,
   "additionalPropertyCheck":false,
