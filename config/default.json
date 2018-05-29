@@ -3,6 +3,7 @@
     "ip":"192.168.0.100",
     "port":3001,
     "expiredWarningPeriod": 180,
+    "expiredWarning2ndPeriod": 30,
     "expiredPeriodTimeUnit": "days",
     "expiredEventSubscriber":{
       "roles":["superAdmin"],
@@ -76,6 +77,8 @@
   "elasticsearch":{
     "host": "localhost",
     "port": 9200,
+    "user":"elastic",
+    "password":"ovYOAXNrcs5c36FaWi6y",
     "mode": "strict"
   },
   "redis": {
