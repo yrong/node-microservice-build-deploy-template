@@ -56,7 +56,7 @@
   "expiration": 1800,
   "userFieldsIgnored4Token":["passwd","id","token"],
   "logger":{
-    "defaultLevel":"INFO"
+    "defaultLevel":"DEBUG"
   },
   "mail": {
     "host": "smtp.qq.com",

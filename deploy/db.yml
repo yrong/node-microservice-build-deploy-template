@@ -39,10 +39,10 @@ services:
       - cluster.name=es-cluster
       - discovery.type=single-node
       - discovery.zen.minimum_master_nodes=1
-      - xpack.security.enabled=false
-      - xpack.monitoring.enabled=false
-      - xpack.ml.enabled=false
-      - xpack.watcher.enabled=false
+      - xpack.security.enabled=true
+      - xpack.monitoring.enabled=true
+      - xpack.ml.enabled=true
+      - xpack.watcher.enabled=true
       - "ES_JAVA_OPTS=-Xms2048m -Xmx2048m"
     volumes:
       - $DB_DATA/elasticsearch:/usr/share/elasticsearch/data
@@ -73,4 +73,4 @@ services:
           - POSTGRES_PASSWORD=$PG_PASSWD
           - POSTGRES_DB=$PG_DB_NOTIFICATION
         volumes:
-          - $DB_DATA/pg-PG_DB_NOTIFICATION:/var/lib/postgresql/data
+          - $DB_DATA/pg-$PG_DB_NOTIFICATION:/var/lib/postgresql/data
