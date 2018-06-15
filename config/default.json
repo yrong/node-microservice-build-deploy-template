@@ -30,10 +30,11 @@
     "host":"192.168.0.100",
     "port":3005,
     "validateOrderPayment":false,
-    "expiredPeriod": 86400,
-    "expiredWarningPeriod": 79200,
-    "expiredPeriodTimeUnit": "seconds",
-    "expiredEventSubscriber":{"roles":["financial_staff"]}
+    "expiredPeriod": 3,
+    "expiredWarningPeriod": 1,
+    "expiredPeriodTimeUnit": "days",
+    "expiredEventSubscriber":{"roles":["financial_staff"]},
+    "expiredLegacyDate":"2018-06-19"
   },
   "gateway":{
     "host":"192.168.0.100",
