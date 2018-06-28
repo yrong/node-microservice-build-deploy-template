@@ -16,7 +16,15 @@
   },
   "auth":{
     "host":"192.168.0.100",
-    "port":3002
+    "port":3002,
+    "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
+    "expiration": 1800,
+    "sms":{
+      "AppCode":"f8d9f27e5c8345e09cda219e97698688",
+      "expiration": 120,
+      "sendFlag": false
+    },
+    "userFieldsIgnored4Token":["passwd","id","token"]
   },
   "notifier":{
     "host":"192.168.0.100",
@@ -53,9 +61,6 @@
   "wrapResponse": true,
   "additionalPropertyCheck":false,
   "preImportReference":true,
-  "secret": "WEvHL/pbqX6qpqrcORwHQYWmNWnguxiaMEHd7eWnZB1toHzO",
-  "expiration": 1800,
-  "userFieldsIgnored4Token":["passwd","id","token"],
   "logger":{
     "defaultLevel":"DEBUG"
   },
